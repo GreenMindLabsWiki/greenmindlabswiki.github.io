@@ -1,0 +1,77 @@
+#Nome projeto
+site_name: ABase
+
+#Site
+site_url: 'https://wiki.greenmindlabs.com'
+
+#Descrição do projeto
+site_description: 'ABase é uma base de artigos compartilhado de forma livre para ajudar a comunidade.'
+
+#Nome Autor
+site_author: 'GreenMind'
+
+#Google analytics
+#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+
+#Pasta onde fica os posts
+docs_dir: 'abase'
+
+#Tema
+theme:
+  name: 'material'
+
+
+markdown_extensions:
+  - admonition
+
+
+#Tema Site
+#site_dir: '/var/www/html/abase'
+site_dir: 'abase_site'
+
+#Cores
+extra:
+  #Versão ALFA
+  version: 0.1
+  #logo: 'plant.png'
+  logo: 'favicon.png'
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Blue Grey'
+
+
+#Paginas
+
+pages:
+- ABase: 'index.md'
+
+
+- Infraestrutura:
+  - 'Home Infraestrutura': 'Infraestrutura/index.md'
+
+  - Virtualização:
+      - 'Home Virtualização': 'Infraestrutura/Virtualizacao/index.md'
+      - 'Antes de começar': 'Infraestrutura/Virtualizacao/Antes-de-Comecar.md'
+
+      - Virtualbox:
+          - 'O que é Virtualbox?': 'Infraestrutura/Virtualizacao/Virtualbox/O-que-e-Virtualbox.md'
+          - 'Instalação Linux APT': 'Infraestrutura/Virtualizacao/Virtualbox/Instalacao-em-Sistema-Operacional-Linux-APT.md'
+          - 'Instalação Linux DPKG': 'Infraestrutura/Virtualizacao/Virtualbox/Instalando-em-Sistema-Operacional-Linux-DPKG.md'
+          - 'Instalação do Extension Pack': 'Infraestrutura/Virtualizacao/Virtualbox/Instalacao-do-Extension-Pack.md'
+          - 'Instalação do VirtualBox no Windows': 'Infraestrutura/Virtualizacao/Virtualbox/Instalacao-em-Sistema-Windows.md'
+          #- 'Instalação do VBox Additions': 'Infraestrutura/Virtualizacao/Virtualbox/Instalacao-do-VBox-Additions.md'
+          - 'Exportando Maquina Virtual': 'Infraestrutura/Virtualizacao/Virtualbox/Exportando-Maquina-Virtual.md'
+          - 'Configurando Rede': 'Infraestrutura/Virtualizacao/Virtualbox/Configurando-Rede.md'
+          - 'Configurando Armazenamento': 'Infraestrutura/Virtualizacao/Virtualbox/Configurando-Armazenamento.md'
+#          - 'Virtualbox Mac OS X': 'Infraestrutura/Virtualizacao/Virtualbox/Virtualbox-Mac-OS-X.md'
+
+
+
+      - Vagrant :
+          - 'Home Vagrant': 'Infraestrutura/Virtualizacao/Vagrant/index.md'
+          - 'O que é Vagrant': 'Infraestrutura/Virtualizacao/Vagrant/O-Que-e-o-Vagrant.md'
+          - 'Instalando o Vagrant no Linux': 'Infraestrutura/Virtualizacao/Vagrant/Instalando-o-Vagrant-no-Linux.md'
+          - 'Gerenciando Vagrant no Linux': 'Infraestrutura/Virtualizacao/Vagrant/Gerenciando-Vagrant-no-Linux.md'
+          - 'Usando Box Kali': 'Infraestrutura/Virtualizacao/Vagrant/Usando-box-Kali.md'
+          - 'Shell Script e Vagrant': 'Infraestrutura/Virtualizacao/Vagrant/Shell-Script-e-Vagrant.md'
+          #- 'Inserindo Box Windows no Vagrant': 'Infraestrutura/Virtualizacao/Vagrant/Inserindo-Box-Windows-no-Vagrant.md'
